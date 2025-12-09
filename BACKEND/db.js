@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const uri ='mongodb+srv://Host:Ritheesh123@cluster0.qr68tq8.mongodb.net/'
+const uri ='mongoose uri/'
 mongoose.connect(uri)
 const connection=mongoose.connection
 
