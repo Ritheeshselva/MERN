@@ -48,4 +48,5 @@ newuser.save().then (()=>{
 //or
 app.listen(port,()=>{
  console.log(`server on:${port}`);
-})
+})   
+
