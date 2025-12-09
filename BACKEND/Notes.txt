@@ -1,0 +1,31 @@
+npm i express {for express}
+
+npm i dotenv  {for dotenv}
+
+MongoDb:
+
+show dbs
+show collections
+db.dropDatabase()
+
+//create
+db.users.insertOne({name: "Ritheesh"})
+db.users.insertMany([{age:21},{age:20}])
+
+//read
+db.users.find()
+db.users.find({name:"Ritheesh"})
+db.users.findOne({name:"Ritheesh"})
+db.users.countDocument({name:"Ritheesh"})
+
+//update
+db.users.updateOne({age:20},{$set:{age:3}})
+
+//delete
+db.users.deleteOne({age:20})
+
+db.users.find({name:{$ne:"Ritheesh"}})
+
+db.users.find({age:{$gt:12}})
+db.users.find({$and:[{age:12},{name:"Rith"}]})
+db.users.find({$or:[{age:12},{name:"Rith"}]})
